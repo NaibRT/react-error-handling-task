@@ -30,10 +30,10 @@ class ErrorBoundry extends Component<Props,State> {
         let log = {
             type:'error',
             error:error.toString(),
-            info:info.toString(),
-            route:window.location.href
+            info:JSON.stringify(info),
+            route:window.location.pathname
         }
-        
+        console.log('log',log)
         fetch(`${process.env.REACT_APP_API_URL}`,{
             headers:{},
             body:JSON.stringify(log),

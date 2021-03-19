@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
        <ErrorBoundry>
-          {/* <Test/> */}
+          <Test/>
        </ErrorBoundry>
     </div>
   );
